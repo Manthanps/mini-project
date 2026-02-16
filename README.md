@@ -152,4 +152,31 @@ pip install pandas numpy matplotlib seaborn scikit-learn xgboost shap
 
 ### 2️⃣ Run the Program
 
-If
+If using a Python file:
+
+```bash
+python main.py
+```
+
+If using Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+---
+
+## 📌 Future Improvements
+
+* Add deep learning models
+* Integrate ECG signal analysis
+* Web application dashboard
+* Hospital integration
+* Real-time patient monitoring
+
+---
+
+## 👨‍💻 Author
+
+**Manthan**
+Medical AI Student & Research Enthusiast
