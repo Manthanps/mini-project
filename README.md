@@ -1,49 +1,51 @@
-# HEART ATTACK
-## 📌 Overview
+# ❤️ Heart Attack Prediction using Machine Learning & Explainable AI
 
-This project builds a **machine learning based disease prediction / classification system** using structured medical data.
-We train multiple models and evaluate their performance using standard metrics and visualization techniques.
-We also apply **Explainable AI (XAI)** using SHAP to understand how the model makes decisions.
+## 📌 Project Overview
+
+This project develops a **Heart Attack Prediction System** using machine learning algorithms on structured clinical data.
+The aim is to assist doctors and healthcare providers in identifying patients at **high risk of heart attack** at an early stage.
+
+The system not only predicts risk but also explains *why* the prediction was made using Explainable AI (SHAP), which is very important in medical applications.
 
 ---
 
 ## 🧠 Technologies & Libraries Used
 
-### Data Handling
+### Data Processing
 
-* **Pandas** – Data loading and preprocessing
-* **NumPy** – Numerical computations
+* **Pandas** – For loading and managing dataset
+* **NumPy** – For numerical and array operations
 
 ### Visualization
 
 * **Matplotlib** – Graph plotting
-* **Seaborn** – Statistical visualizations
+* **Seaborn** – Statistical data visualization
 
-### Machine Learning
+### Machine Learning Models
 
 * **Scikit-Learn**
 
-  * Train-test splitting
-  * Data standardization
+  * Train/Test splitting
+  * Feature scaling
   * Evaluation metrics
   * Logistic Regression
-  * Random Forest
+  * Random Forest Classifier
 
 * **XGBoost**
 
-  * Advanced gradient boosting classifier
+  * High-performance gradient boosting model
 
 ### Explainable AI
 
 * **SHAP (SHapley Additive Explanations)**
 
-  * Model interpretability
   * Feature importance
-  * Decision understanding
+  * Model interpretability
+  * Understanding predictions
 
 ---
 
-## 📦 Imported Modules
+## 📦 Imported Libraries
 
 ```python
 import pandas as pd
@@ -65,55 +67,51 @@ shap.initjs()
 
 ---
 
-## ⚙️ What Each Library Does
+## ⚙️ Purpose of Each Library
 
-| Library                | Purpose                               |
-| ---------------------- | ------------------------------------- |
-| pandas                 | Reads and manages dataset             |
-| numpy                  | Mathematical operations               |
-| matplotlib             | Plots graphs                          |
-| seaborn                | Better visual analytics               |
-| train_test_split       | Splits data into training and testing |
-| StandardScaler         | Normalizes features                   |
-| LogisticRegression     | Baseline classification model         |
-| RandomForestClassifier | Ensemble decision tree model          |
-| XGBClassifier          | Boosting based high-performance model |
-| metrics                | Evaluate model performance            |
-| SHAP                   | Explain model predictions             |
+| Library                | Role in Project                         |
+| ---------------------- | --------------------------------------- |
+| pandas                 | Reads and handles medical dataset       |
+| numpy                  | Mathematical processing                 |
+| matplotlib             | Plotting performance graphs             |
+| seaborn                | Visual data analysis                    |
+| train_test_split       | Divides dataset into training & testing |
+| StandardScaler         | Normalizes patient features             |
+| LogisticRegression     | Baseline prediction model               |
+| RandomForestClassifier | Tree-based ensemble model               |
+| XGBClassifier          | Advanced boosting model                 |
+| sklearn.metrics        | Evaluates model performance             |
+| SHAP                   | Explains AI decisions                   |
 
 ---
 
 ## 🔬 Machine Learning Workflow
 
-1. Load dataset
-2. Clean & preprocess data
-3. Split into training and testing sets
-4. Normalize features
-5. Train multiple models:
+1. Load heart attack dataset
+2. Perform data cleaning and preprocessing
+3. Split dataset into training and testing data
+4. Apply feature scaling (Standardization)
+5. Train models:
 
    * Logistic Regression
    * Random Forest
    * XGBoost
-6. Evaluate models using:
-
-   * Accuracy
-   * Confusion Matrix
-   * Classification Report
-   * ROC Curve
-   * AUC Score
-7. Interpret predictions using SHAP
+6. Evaluate models
+7. Interpret predictions using SHAP Explainable AI
 
 ---
 
-## 📊 Evaluation Metrics
+## 📊 Model Evaluation Methods
 
-* **Accuracy Score** – Overall correctness
-* **Confusion Matrix** – Correct vs incorrect predictions
+The following metrics are used to check model performance:
+
+* **Accuracy Score** – Overall correct predictions
+* **Confusion Matrix** – TP, TN, FP, FN
 * **Classification Report**
 
   * Precision
   * Recall
-  * F1-score
+  * F1 Score
 * **ROC Curve**
 * **AUC Score**
 
@@ -121,55 +119,37 @@ shap.initjs()
 
 ## 🤖 Explainable AI (SHAP)
 
+In healthcare, predictions must be explainable.
 We use SHAP to:
 
-* Identify important medical features
-* Understand model decisions
-* Increase doctor trust
-* Improve transparency
+* Show which features contributed to heart attack risk
+* Help doctors trust the AI system
+* Detect important clinical factors
+* Improve transparency of the model
 
-`shap.initjs()` enables interactive visual explanations inside Jupyter Notebook.
-
----
-
-## 🎯 Project Goal
-
-To create a **doctor-assist AI system** that:
-
-* Predicts disease risk
-* Supports early diagnosis
-* Provides interpretable results
-* Helps hospitals and clinics
+`shap.initjs()` enables interactive SHAP visualizations in Jupyter Notebook.
 
 ---
 
-## ▶️ How to Run
+## 🎯 Objective
 
-1. Install dependencies
+To build a **clinical decision support tool** that:
+
+* Predicts heart attack risk early
+* Supports medical professionals
+* Improves patient monitoring
+* Enables preventive treatment
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install Required Libraries
 
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn xgboost shap
 ```
 
-2. Run the notebook or Python file
+### 2️⃣ Run the Program
 
-```bash
-python main.py
-```
-
----
-
-## 📌 Future Improvements
-
-* Add deep learning models
-* Add medical imaging analysis
-* Deploy as web or mobile app
-* Integrate with hospital PACS systems
-* Real-time prediction API
-
----
-
-## 👨‍💻 Author
-
-Manthan – Medical AI Research Student
-
+If
